@@ -1,6 +1,6 @@
 {
   "name": "@guachos/nestjs-base-crud-schematics",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "NestJS Base Crud Module Schematics for @nestjs/cli",
   "author": "destbreso <destevezbreso@gmail.com>",
   "license": "MIT",

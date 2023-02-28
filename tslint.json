@@ -1,0 +1,18 @@
+{
+    "rulesDirectory": ["codelyzer"],
+    "extends": ["../../tslint.json"],
+    "rules": {
+      "directive-selector": [
+        true,
+        "attribute",
+        "<%= prefix %>",
+        "camelCase"
+      ],
+      "component-selector": [
+        true,
+        "element",
+        "<%= prefix %>",
+        "kebab-case"
+      ]
+    }
+   }

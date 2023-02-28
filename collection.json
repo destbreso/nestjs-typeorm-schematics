@@ -1,0 +1,10 @@
+{
+  "$schema": "./node_modules/@angular-devkit/schematics/collection-schema.json",
+  "schematics": {
+    "crud": {
+      "description": "Schematic to generate a dynamic crud module.",
+      "factory": "./lib/schematics/crud/crud.factory#main",
+      "schema": "./lib/schematics/crud/schema.json"
+    }
+  }
+}
