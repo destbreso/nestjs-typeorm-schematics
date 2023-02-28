@@ -1,0 +1,49 @@
+{
+  "name": "@guachos/nestjs-base-crud-schematics",
+  "version": "0.0.1",
+  "description": "NestJS Base Crud Module Schematics for @nestjs/cli",
+  "author": "destbreso <destevezbreso@gmail.com>",
+  "license": "MIT",
+  "main": "index.js",
+  "files": [
+    "lib/**/*",
+    "collection.json"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "npm run move && tsc -p tsconfig.json",
+    "move": "rm -rf lib && mkdir -p lib/schematics && cp -ar ./src/schematics/* lib/schematics && mkdir -p lib/utils && cp -ar ./src/utils/* lib/utils && cp ./src/defaults.ts lib",
+    "prepare": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/destbreso/nestjs-base-crud-schematics.git"
+  },
+  "contributors": [],
+  "bugs": {
+    "url": "git+https://github.com/destbreso/nestjs-base-crud-schematics/issues"
+  },
+  "homepage": "git+https://github.com/destbreso/nestjs-base-crud-schematics#README",
+  "dependencies": {
+    "@angular-devkit/core": "8.3.4",
+    "@angular-devkit/schematics": "8.3.4",
+    "@comerick/nestjs-template-schematics": "1.0.13",
+    "ts-morph": "^4.0.0",
+    "typescript": "3.4.5"
+  },
+  "devDependencies": {
+    "@types/jest": "23.3.14",
+    "@types/node": "10.14.18",
+    "gulp": "4.0.1",
+    "jest": "24.9.0",
+    "nyc": "14.1.1",
+    "ts-jest": "24.1.0",
+    "tslint": "5.20.0"
+  },
+  "schematics": "./collection.json",
+  "directories": {
+    "lib": "lib"
+  }
+}
