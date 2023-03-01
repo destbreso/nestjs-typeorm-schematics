@@ -1,8 +1,8 @@
-import { Entity} from 'typeorm'
-import { BasePersistentEntity } from "../../../../../common/modules/data-access/typeorm/base.persistent.entity";
+import { Entity } from 'typeorm'
+import { MinimalEntity } from '@nestjs-data-access/nestjs-data-access'
 
 @Entity('<%= lowerCase(name) %>')
-export class <%= classify(name) %>Persistence extends BasePersistentEntity {
+export class <%= classify(name) %> Persistence extends MinimalEntity {
 
     //custom props typeorm persistence
 }
