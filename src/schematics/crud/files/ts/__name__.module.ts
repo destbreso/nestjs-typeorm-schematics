@@ -4,11 +4,9 @@ import { <%= classify(name) %>Persistence } from "./infra/<%= lowerCase(name) %>
 import { <%= classify(name) %>Repository } from "./infra/<%= lowerCase(name) %>.repository";
 import { <%= classify(name) %>Controller } from "./<%= lowerCase(name) %>.controller";
 import { <%= classify(name) %>Service } from './<%= lowerCase(name) %>.service';
-import { DataAccessModule } from '../../../../common/modules/data-access/data-access.module';
 
 @Module({
     imports: [
-        DataAccessModule,
         TypeOrmModule.forFeature([<%= classify(name) %>Persistence])],
     providers: [
         <%= classify(name) %>Repository,
