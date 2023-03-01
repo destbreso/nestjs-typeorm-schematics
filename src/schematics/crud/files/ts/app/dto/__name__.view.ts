@@ -4,7 +4,7 @@ import { <%= classify(name) %>Domain } from "../../domain/<%= lowerCase(name) %>
 import { Create<%= classify(name) %>Dto } from "./<%= lowerCase(name) %>.create.dto";
 
 export class <%= classify(name) %>View extends IntersectionType(
-  PartialType(Create <%= classify(name) %>Dto),
+  PartialType(Create<%= classify(name) %>Dto),
   BaseView) {
 
   // custom decorated properties
