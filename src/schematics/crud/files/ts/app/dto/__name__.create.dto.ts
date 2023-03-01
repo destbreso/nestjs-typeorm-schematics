@@ -1,5 +1,5 @@
 
-import { DtoMapper } from '@gds-core/gds-core'
+import { DtoMapper } from '@guachos/gds-core'
 import { 
     <%= classify(name) %>Domain, 
     New<%= classify(name) %>Props 
