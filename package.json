@@ -1,7 +1,7 @@
 {
-  "name": "@guachos/nestjs-base-crud-schematics",
+  "name": "@guachos/nestjs-typeorm--schematics",
   "version": "1.0.0",
-  "description": "NestJS Base Crud Module Schematics for @nestjs/cli",
+  "description": "Custom NestJS Module Schematics for @nestjs/cli over typeorm persisnce layer",
   "author": "destbreso <destevezbreso@gmail.com>",
   "license": "MIT",
   "main": "index.js",
@@ -19,13 +19,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/destbreso/nestjs-base-crud-schematics.git"
+    "url": "git+https://github.com/destbreso/nestjs-typeorm-schematics.git"
   },
   "contributors": [],
   "bugs": {
-    "url": "git+https://github.com/destbreso/nestjs-base-crud-schematics/issues"
+    "url": "git+https://github.com/destbreso/nestjs-typeorm-schematics/issues"
   },
-  "homepage": "git+https://github.com/destbreso/nestjs-base-crud-schematics#README",
+  "homepage": "git+https://github.com/destbreso/nestjs-typeorm-schematics#README",
   "dependencies": {
     "@angular-devkit/core": "8.3.4",
     "@angular-devkit/schematics": "8.3.4",
