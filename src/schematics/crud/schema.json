@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/schema",
-  "$id": "DynamicModuleschema",
-  "title": "Nest Dynamic Module Options Schema",
+  "$id": "CrudSchema",
+  "title": "Nest Base Crud Module Options Schema",
   "type": "object",
   "properties": {
     "name": {
@@ -16,7 +16,8 @@
     "path": {
       "type": "string",
       "format": "path",
-      "description": "The path to create the module."
+      "description": "The path to create the module.",
+      "x-prompt": "What path would you like to use for create the module?"
     },
     "module": {
       "type": "string",
@@ -37,6 +38,7 @@
     }
   },
   "required": [
-    "name"
+    "name",
+    "path"
   ]
 }

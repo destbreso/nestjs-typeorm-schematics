@@ -13,7 +13,7 @@ export class <%= classify(name) %>Controller extends BuildCRUDController(
     Create<%= classify(name) %>Dto,
     Update<%= classify(name) %>Dto,
     <%= classify(name) %>View) {
-    constructor(private readonly <%= lowerCase(name) %>Service: <%= classify(name) %>Service) {
-        super(<%= lowerCase(name) %>Service)
+    constructor(private readonly <%= camelize(name) %>Service: <%= classify(name) %>Service) {
+        super(<%= camelize(name) %>Service)
     }
 }

@@ -1,4 +1,4 @@
-export interface DynModOptions {
+export interface CrudOptions {
   /**
    * The name of the module.
    */
@@ -10,7 +10,7 @@ export interface DynModOptions {
   /**
    * The path to insert the module declaration.
    */
-  module?: Path;
+  module?: string;
   /**
    * Directive to insert declaration in module.
    */
