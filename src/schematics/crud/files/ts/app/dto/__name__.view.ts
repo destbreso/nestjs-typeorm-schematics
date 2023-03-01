@@ -1,5 +1,5 @@
 import { IntersectionType, PartialType } from "@nestjs/swagger";
-import { BaseView } from "@nestjs-typeorm-recipes/nestjs-typeorm-recipes";
+import { BaseView } from "@guachos/nestjs-typeorm-recipes";
 import { <%= classify(name) %>Domain } from "../../domain/<%= lowerCase(name) %>.domain.entity";
 import { Create<%= classify(name) %>Dto } from "./<%= lowerCase(name) %>.create.dto";
 

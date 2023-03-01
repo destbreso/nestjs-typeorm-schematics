@@ -4,7 +4,7 @@ import { <%= classify(name) %>Service } from "./<%= lowerCase(name) %>.service";
 import { <%= classify(name) %>View } from "./app/dto/<%= lowerCase(name) %>.view";
 import { Create<%= classify(name) %>Dto } from "./app/dto/<%= lowerCase(name) %>.create.dto";
 import { Update<%= classify(name) %>Dto } from "./app/dto/<%= lowerCase(name) %>.update.dto";
-import { BuildCRUDController } from "@nestjs-typeorm-recipes/nestjs-typeorm-recipes";
+import { BuildCRUDController } from "@guachos/nestjs-typeorm-recipes";
 
 @ApiTags('<%= classify(name) %> (Generated)') // remove or modify this
 @Controller("<%= dasherize(name) %>")
