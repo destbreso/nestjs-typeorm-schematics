@@ -78,7 +78,6 @@ function generate(options: CrudOptions) {
 }
 
 function addDeclarationToModule(options: CrudOptions): Rule {
-  console.log('===', options)
   return (tree: Tree) => {
     if (options.skipImport !== undefined && options.skipImport) {
       return tree;
@@ -92,7 +91,6 @@ function addDeclarationToModule(options: CrudOptions): Rule {
     }
     const content = tree.read(options.module).toString();
 
-    console.log('===>',content)
     const declarator: ModuleDeclarator = new ModuleDeclarator();
     // for now, we'll pass in staticOptions using the `register()` method
     // with no default options
