@@ -1,7 +1,7 @@
 {
   "name": "@guachos/nestjs-typeorm-schematics",
   "version": "1.0.0",
-  "description": "Custom NestJS Module Schematics for @nestjs/cli over typeorm persisnce layer",
+  "description": "Custom NestJS Schematics for @nestjs/cli, generation of custom resources in projects with typeorm persisnce layer",
   "author": "destbreso <destevezbreso@gmail.com>",
   "license": "MIT",
   "main": "index.js",

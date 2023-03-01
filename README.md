@@ -104,7 +104,7 @@ You can also refer to these articles:
 
 [Extend Angular Schematics to customize your development process](https://indepth.dev/posts/1438/extend-angular-schematics-to-customize-your-development-process)
 
-[How to create your own Angular Schematics](https://javascript-conference.com/blog/how-to-create-your-own-angular-schematics/)
+[How to create your own Angular Schematics](https://javascript-conference.com/blog/how-to-create-your-own-angular-schematics)
 
 
 ### Change Log
