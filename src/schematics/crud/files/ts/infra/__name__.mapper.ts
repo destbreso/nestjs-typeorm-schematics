@@ -1,6 +1,6 @@
 import { <%= classify(name) %>Persistence } from "./<%= lowerCase(name) %>.persistence.entity";
 import { <%= classify(name) %>Domain } from "../domain/<%= lowerCase(name) %>.domain.entity";
-import { IEntityMapper } from "@guachos/gds-core";
+import { IEntityMapper } from "@guachos/api-core";
 
 export class <%= classify(name) %>Mapper extends IEntityMapper<<%= classify(name) %>Domain, <%= classify(name) %>Persistence>{
     public static PersistToDomain(persistence: <%= classify(name) %>Persistence): <%= classify(name) %>Domain {

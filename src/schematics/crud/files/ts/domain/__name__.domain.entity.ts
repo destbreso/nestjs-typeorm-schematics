@@ -7,7 +7,7 @@ import {
     AddDomainGetters,
     DeepPartial,
     Result,
-} from '@guachos/gds-core';
+} from '@guachos/api-core';
 
 type <%= classify(name) %>Props =
     TimestampProps & {
