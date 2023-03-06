@@ -34,7 +34,7 @@ See [below](#dynamic-package-generation) for a description of the use cases.
 Install the package as **dev** dependencies below.  Due to the implementation of the NestJS CLI, the package **can be** **global** or **dev**.
 
 ```bash
-npm install -D @guachos/nestjs-typeorm-schematics"
+npm install -D @guachos/nestjs-typeorm-schematics
 ```
 
 ### Dynamic Package Generation
