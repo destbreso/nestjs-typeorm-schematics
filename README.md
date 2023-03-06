@@ -37,6 +37,12 @@ Install the package as **dev** dependencies below.  Due to the implementation of
 npm install -D @guachos/nestjs-typeorm-schematics
 ```
 
+or
+
+```bash
+yarn add -D @guachos/nestjs-typeorm-schematics
+```
+
 ### Dynamic Package Generation
 
 Currently, there is only one case supported, with a corresponding schematic:
