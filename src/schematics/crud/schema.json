@@ -17,6 +17,10 @@
       "type": "string",
       "format": "path",
       "description": "The path to create the module.",
+      "$default": {
+        "$source": "argv",
+        "index": 1
+      },
       "x-prompt": "What path would you like to use for create the module?"
     },
     "module": {
