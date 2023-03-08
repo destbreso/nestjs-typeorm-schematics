@@ -112,6 +112,10 @@ You can also refer to these articles:
 
 [How to create your own Angular Schematics](https://javascript-conference.com/blog/how-to-create-your-own-angular-schematics)
 
+[Generating microservices with nestjs and schematics](https://dev.to/rebellionpay/generating-microservices-with-nestjs-and-schematics-1091)
+
+<!-- https://devpress.csdn.net/cloudnative/62f282667e6682346618547d.html -->
+
 
 ### Change Log
 
