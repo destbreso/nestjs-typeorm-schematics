@@ -9,6 +9,8 @@ import {
     Result,
 } from '@guachos/api-core';
 
+
+// Define custom entity props
 type <%= classify(name) %>Props =
     TimestampProps & {
         //custom props
@@ -18,6 +20,7 @@ export type New<%= classify(name) %>Props = Omit<<%= classify(name) %>Props, key
 
 export type Update<%= classify(name) %>Props = DeepPartial<New<%= classify(name) %>Props>
 
+// Define Getters and Getter Interface for custom entity props
 interface DomainGetters extends
     TimestampGetters {
     //custom getters
@@ -27,7 +30,7 @@ export interface <%= classify(name) %>Domain extends DomainGetters {
 } //TRICK: add getters to type system via interface merging
 
 
-@AddDomainGetters()
+@AddDomainGetters() // inject getters to <%= classify(name) %>Domain
 export class <%= classify(name) %>Domain extends DomainEntity<<%= classify(name) %>Props> {
 
     public New(props: New<%= classify(name) %>Props): Result<<%= classify(name) %>Domain> {
@@ -58,9 +61,10 @@ export class <%= classify(name) %>Domain extends DomainEntity<<%= classify(name)
     }
 
     public update(props: Update<%= classify(name) %>Props): Result<<%= classify(name) %>Domain> {
+        this.props.updatedAt = new Date();
+
         //custom props update
 
-        this.props.updatedAt = new Date();
 
         return <%= classify(name) %>Domain.prototype.Create(this.props, this.id)
     }
