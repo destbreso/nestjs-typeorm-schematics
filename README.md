@@ -44,14 +44,18 @@ yarn add -D @guachos/nestjs-typeorm-schematics
 
 ### Dependencies
 
+```bash
+yarn add typeorm @nestjs/{common,typeorm,swagger} @guachos/{api-core,nestjs-typeorm-data-access,nestjs-typeorm-recipes}
+```
+
 The generated code uses some of the public libraries of the `@guachos` development ecosystem:
 
 * `@guachos/api-core`
+* `@guachos/nestjs-api-response`
 * `@guachos/nestjs-common`
 * `@guachos/nestjs-typeorm-data-access`
 * `@guachos/nestjs-typeorm-meta-mapper`
-* `@guachos/nestjs-api-response`
-
+* `@guachos/nestjs-typeorm-recipes`
 
 > **NOTE**: some of these libraries are currently maintained in private repos, so this solution is not fully open source...for now
 >
@@ -104,6 +108,29 @@ npx nest g -c @guachos/nestjs-typeorm-schematics crud <module-name> <destination
 
 The schematic adds the new module in a folder named `<module-name>`.  Just like using the built-in module schematic (e.g., `nest g module myNewModule`), this will add the generated module to the imports list of your root module with the appropriate metadata and includes.  At this point, you can customize the generated module as needed.
 
+
+##### Example: Create `todo` **crud** module
+
+```bash
+> npx nest g -c @guachos/nestjs-typeorm-schematics crud               
+? Which project would you like to generate to? src [ Default ]
+? What name would you like to use for the module? todo
+? What path would you like to use for create the module? 
+CREATE src/todo/todo.controller.ts (684 bytes)
+CREATE src/todo/todo.module.ts (551 bytes)
+CREATE src/todo/todo.service.ts (479 bytes)
+CREATE src/todo/app/dto/todo.create.dto.ts (550 bytes)
+CREATE src/todo/app/dto/todo.update.dto.ts (260 bytes)
+CREATE src/todo/app/dto/todo.view.ts (532 bytes)
+CREATE src/todo/domain/todo.domain.entity.ts (1893 bytes)
+CREATE src/todo/infra/todo.mapper.ts (1079 bytes)
+CREATE src/todo/infra/todo.persistence.entity.ts (213 bytes)
+CREATE src/todo/infra/todo.repository.ts (451 bytes)
+CREATE src/todo/test/todo.controller.spec.ts (548 bytes)
+CREATE src/todo/test/todo.service.spec.ts (438 bytes)
+UPDATE src/app.module.ts (417 bytes)
+
+```
 <!-- ### Customizing
 
 The files in the project have comments that should help guide you. -->
