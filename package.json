@@ -1,6 +1,6 @@
 {
   "name": "@guachos/nestjs-typeorm-schematics",
-  "version": "0.0.92",
+  "version": "0.0.93",
   "description": "NestJS CLI Schematics for Custom resources Generation in projects with typeorm pesistence layer",
   "author": "destbreso <destevezbreso@gmail.com>",
   "license": "MIT",
